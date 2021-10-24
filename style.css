@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(67, 95, 108, 1) 100%
+  );
+  color: white;
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 1rem;
+  color: #f0e5cf;
+}
+
+header,
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  margin: 2px;
+  border: none;
+  font-size: 1rem;
+  background: white;
+  border-radius: 2px;
+}
+
+form button {
+  color: #a18927;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  color: #a18927;
+  background: #277aa1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.todo-container {
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+.delete-btn,
+.complete-btn {
+  background: rgb(201, 204, 213);
+  color: white;
+  padding: 1rem;
+  /* margin: 1px; */
+  border: none;
+
+  cursor: pointer;
+  font-size: 0.5rem;
+}
+
+.complete-btn:hover {
+  background: yellowgreen;
+}
+.delete-btn:hover {
+  background: red;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem 0rem;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(5rem) rotateY(30deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: black;
+  font-weight: bold;
+  width: 6rem;
+  cursor: pointer;
+  padding: 0.59rem;
+  border-radius: 2px;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 0.12rem;
+  background: #c9ccd5;
+}
+
+select:hover {
+  background-color: black;
+  color: white;
+}
